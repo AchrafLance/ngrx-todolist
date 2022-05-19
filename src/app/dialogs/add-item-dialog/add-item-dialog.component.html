@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Add Item</h1>
+<div mat-dialog-content>
+  <form (ngSubmit)="submit()" [formGroup]="itemForm">
+    <mat-form-field appearance="legacy">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="description">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Select an option</mat-label>
+      <mat-select disableRipple formControlName="status">
+        <mat-option value="Open">Open</mat-option>
+        <mat-option value="In Progess">In Progess</mat-option>
+        <mat-option value="Done">Done</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div>
+      <button mat-button type="button" (click)="close()">Cancel</button>
+      <button mat-raised-button color="primary" cdkFocusInitial type="submit">{{data !== null ? 'Update' : 'Add'}}</button>
+    </div>
+
+  </form>
+</div>

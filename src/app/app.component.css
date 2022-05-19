@@ -1,0 +1,32 @@
+.main{
+}
+
+.header{
+    background-color: black;
+    color:white;
+    padding: 10px 0;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.first-section button{
+    width: 100%; 
+    padding: 10px;
+}
+
+.second-section{
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+mat-card{
+    margin: 10px;
+
+}
